@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+#sea{
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+}
+
+audio {
+        display:flex;
+        position:fixed;
+        top: 0;
+        right: 0;
+        padding: 1px;  
+        z-index: 1000; /* Ensure it's above other content */
+        max-width:10%;
+        max-height:5%;
+}
+
+
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #bfb8e7;
+    border-radius: 5px;
+    width: 75px;
+    height: 75px;
+    z-index:1;
+}
+
+.score-container {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.restart-button {
+    margin-top: 20px;
+    background-color: #cfa485eb;
+    color: rgba(0, 0, 0, 0.979);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index:1;
+}
+
+.restart-button:hover {
+    background-color: #ca7ee5;
+    z-index:1;
+}
